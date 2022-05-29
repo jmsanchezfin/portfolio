@@ -12,6 +12,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UserProfileService } from './common/user-profile.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { SelfViewComponent } from './components/self-view/self-view.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    SelfViewComponent
   ],
   imports: [
     BrowserModule,
