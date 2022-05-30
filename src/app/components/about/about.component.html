@@ -1,20 +1,19 @@
-<div class="container-xl" id="about">
+<div class="container-xl" id="about" *ngFor="let about of abouts">
     <div class="row">
-      <img src="../../../assets/images/banner_150.png" alt="banner presentacion" height="150px"/>
+      <img src="{{about.banner_url}}" alt="banner presentacion" height="150px"/>
     </div>
     <div class="row">
       <div class="col align-self-start col-xl-auto">
-        <!--usar overflow-visible para que la imagen se sobreponga al banner? -->
         <div class="card text-center" style="width: 17rem">
           <img
-            src="../../../assets/images/cv_card_top.jpg"
+            src="{{about.cv_card_url}}"
             class="card-img-top img-fluid"
             alt="foto de perfil"
           />
           <div class="card-body">
-            <h5 class="card-title">Juan Manuel Sanchez Fin</h5>
+            <h5 class="card-title">{{about.nombre}} {{about.apellido}}</h5>
             <h6 class="card-subtitle mb-2 text-muted">
-              Fullstack Developer Jr.
+              {{about.posicion}}
             </h6>
           </div>
         </div>
@@ -23,16 +22,7 @@
         <div class="card rounded-0 border-0 border-bottom">
           <div class="card-body">
             <h4 class="display-6">Acerca de</h4>
-            <p>
-              Actualmente con un nuevo objetivo profesional vinculado a la
-              programacion y desarrollo web, enriqueciendo y aportándole valor
-              a mi perfil de mas de 22 años de experiencia.
-            </p>
-            <p>
-              Me considero pro activo, dinámico, con facilidad de lenguaje.
-              Capacidad de auto-organizarme en diversas tareas, autónomo,
-              analítico, con excelente capacidad de liderazgo y compromiso en
-              mis emprendimientos personales.
+            <p>{{about.acerca_de}}
             </p>
           </div>
         </div>
