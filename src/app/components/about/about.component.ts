@@ -3,7 +3,10 @@ Using this service we make a call to spring boot application to get a list of ab
 */
 
 import { Component, OnInit } from '@angular/core';
-import { HttpClientAboutService, About } from 'src/app/common/http-client-about.service';
+import {
+  HttpClientAboutService,
+  About,
+} from 'src/app/common/http-client-about.service';
 import { UserProfileService } from 'src/app/common/user-profile.service';
 
 @Component({
@@ -17,11 +20,8 @@ export class AboutComponent implements OnInit {
   constructor(private httpClientAboutService: HttpClientAboutService) {}
 
   ngOnInit(): void {
-    this.httpClientAboutService
-      .getAbouts()
-      .subscribe(
-        response =>{this.abouts = response;}
-        );
-
+    this.httpClientAboutService.getAbouts().subscribe((response) => {
+      this.abouts = response;
+    });
   }
 }

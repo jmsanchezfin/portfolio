@@ -1,124 +1,13 @@
 <div class="container-xl" id="experience">
     <h1 class="display-6">Experiencia</h1>
-    <div class="card rounded-0 border-0 border-bottom">
+    <div class="card rounded-0 border-0 border-bottom" *ngFor="let experience of experiences">
       <div class="card-body">
-        <h5 class="card-title">Analista de Comercio Exterior</h5>
-        <h6 class="card-subtitle mb-2 fw-normal">Mundo OBD</h6>
-        <h6 class="card-subtitle mb-2 text-muted fw-normal">oct. 2019 - actualidad</h6>
+        <h5 class="card-title">{{experience.cargo}}</h5>
+        <h6 class="card-subtitle mb-2 fw-normal">{{experience.empresa}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted fw-normal">{{experience.mes_inicio}} {{experience.anio_inicio}} - {{experience.mes_fin}} {{experience.anio_fin}}</h6>
         <p class="card-text">
-          <ul>Analista de Comercio Exterior
-            <li>Contacto con proveedores</li>
-            <li>Determinación de costos de importación</li>
-            <li>Clasificación arancelaria de mercaderías</li>
-            <li>Conciliación de pagos</li>
-            <li>Enlace con despachante de aduana</li>
-            <li>Seguimientos de cargas</li>
-            <li>Atención al forwarder</li>
-          </ul>
-        
-      </div>
-    </div>
-    <div class="card rounded-0 border-0 border-bottom">
-      <div class="card-body">
-        <h5 class="card-title">Socio</h5>
-        <h6 class="card-subtitle mb-2 fw-normal">COMSEC Cableado & Seguridad</h6>
-        <h6 class="card-subtitle mb-2 text-muted fw-normal">ago. 2018 - mar. 2022</h6>
-        <p class="card-text">
-          Diseño de infraestructura en cableado, vigilancia electrónica y seguridad para empresas.
-          COMSEC es una compañía dedicada a infraestructura IT, seguridad, y cableado. Nos especializamos en instalaciones y servicio técnico de cableados estructurados de datos, integración con sistemas de voz, redes inalámbricas, videovigilancia, control de acceso, alarmas de intrusión, detección de incendio, cercos perimetrales y sistemas ininterrumpidos de energía.
+        {{experience.descripcion}}
         </p>
       </div>
-    </div>
-    <div class="card rounded-0 border-0 border-bottom">
-      <div class="card-body">
-        <h5 class="card-title">IT Manager</h5>
-        <h6 class="card-subtitle mb-2 fw-normal">CODESEAR SRL</h6>
-        <h6 class="card-subtitle mb-2 text-muted fw-normal">2018</h6>
-        <p class="card-text">
-          <ul>Implementación del nuevo centro de Monitoreo de Alarmas y Videovigilancia, llave en mano
-            <li>Administración de servidores plataforma Windows Server 2016</li>
-            <li>Implementación de Firewall</li>
-            <li>Implementación de Red de datos y VPN</li>
-            <li>Gestión de software de monitoreo de alarmas Softguard</li>
-            <li>Instalación y configuración de receptora DXLink</li>
-            <li>Soporte Microinformática</li>
-            <li>Compras de infraestructura IT</li>
-            <li>Contratación y negociación con proveedores IT</li>
-          </ul>
-        
-      </div>
-    </div>
-    <div class="card rounded-0 border-0 border-bottom">
-      <div class="card-body">
-        <h5 class="card-title">IT Manager</h5>
-        <h6 class="card-subtitle mb-2 fw-normal">Security High Definition SA</h6>
-        <h6 class="card-subtitle mb-2 text-muted fw-normal">feb. 2012 - feb. 2018</h6>
-        <p class="card-text">
-          <ul>
-            <li>Administración de servidores plataforma Windows Server 2008</li>
-            <li>Servidor y clientes Tango</li>
-            <li>Implementación de Firewall</li>
-            <li>Gestión de software de monitoreo de alarmas Softguard</li>
-            <li>Instalación y configuración de receptora Surgard</li>
-            <li>Soporte Microinformática</li>
-            <li>Compras de infraestructura</li>
-            <li>Contratación y negociación con proveedores IT</li>
-          </ul>
-        
-      </div>
-    </div>
-    <div class="card rounded-0 border-0 border-bottom">
-      <div class="card-body">
-        <h5 class="card-title">Socio</h5>
-        <h6 class="card-subtitle mb-2 fw-normal">PC Alvear</h6>
-        <h6 class="card-subtitle mb-2 text-muted fw-normal">mar. 2011 - ene. 2017</h6>
-        <p class="card-text">
-          <ul>Socio Gerente
-            <li>Administración del local de venta de informática y videojuegos. Servicio técnico para particulares y Pymes.</li>
-            <li>Contratación y negociación con proveedores IT></li>
-          </ul>
-        
-      </div>
-      <div class="card rounded-0 border-0 border-bottom">
-        <div class="card-body">
-          <h5 class="card-title">Encargado</h5>
-          <h6 class="card-subtitle mb-2 fw-normal">Computer Depot</h6>
-          <h6 class="card-subtitle mb-2 text-muted fw-normal">abr. 2009 - feb. 2011</h6>
-          <p class="card-text">
-            Encargado de sucursal Quilmes<br>
-            Mi función era la de supervisar la sucursal: ventas, control de stock, envíos, servicio técnico, personal. Contratación y negociación con proveedores IT
-          </p>
-        </div>
-      </div>
-      <div class="card rounded-0 border-0 border-bottom">
-        <div class="card-body">
-          <h5 class="card-title">Coordinador</h5>
-          <h6 class="card-subtitle mb-2 fw-normal">Fundacion Joven 2000</h6>
-          <h6 class="card-subtitle mb-2 text-muted fw-normal">nov. 2003 - mar. 2009</h6>
-          <p class="card-text">
-            <ul>Departamento de diseño
-              <li>Diseño del Archivo Histórico sobre Movimiento Obrero Argentino.</li>
-            </ul>
-            <ul>Líder de Proyecto.
-              <li>CyberSacoa, Sacoa Entertainment – Fundación J2k</li>
-              <li>Planificar / renovar salón de juegos por un cibercafé de 100 puestos.</li>
-            </ul>
-            <ul>Lider de Proyecto.
-              <li>Proyecto Centro Tecnológico Gobernación Corrientes – Misiones - Salta</li>
-              <li>Planificar y diseñar un centro tecnológico para la capital de la Provincia de Corrientes, con capacidad para 250 computadoras, sala de reuniones, sala de exposiciones, oficinas de venta.</li>
-            </ul>
-          
-        </div>
-      </div>
-      <div class="card rounded-0 border-0 border-bottom">
-        <div class="card-body">
-          <h5 class="card-title">Administrador de Sistemas</h5>
-          <h6 class="card-subtitle mb-2 fw-normal">Tomas Demucho SA</h6>
-          <h6 class="card-subtitle mb-2 text-muted fw-normal">oct. 2000 - ago. 2003</h6>
-          <p class="card-text">
-            Implementar red, firewall, servidores de archivos/impresión. Soporte Microinformatica.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </div>    
+</div>

@@ -1,91 +1,30 @@
 <div class="container-xl" id="education">
-      <h1 class="display-6">Educacion</h1>
-      <div class="card mb-3 rounded-0 border-0 border-bottom">
-        <div class="row g-0">
-          <div class="col-xl-2">
-            <img
-              src="../../../assets/images/png/ispc_logo_100.png"
-              class="img-fluid rounded-start"
-              alt="Logo ISPC"
-            />
-          </div>
-          <div class="col-xl-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Tecnico en Desarrollo Web y Aplicaciones Digitales
-              </h5>
-              <p class="card-text">Instituto Superior Politecnico de Cordoba</p>
-              <p class="card-text">
-                <small class="text-muted">2022 - 2024</small>
-              </p>
-            </div>
-          </div>
-        </div>
+  <h1 class="display-6">Educacion</h1>
+  <div
+    class="card mb-3 rounded-0 border-0 border-bottom"
+    *ngFor="let education of educations"
+  >
+    <div class="row g-0">
+      <div class="col-xl-2">
+        <img
+          src="{{ education.logo_url }}"
+          class="img-fluid rounded-start"
+          alt="Logo {{ education.institucion }}"
+        />
       </div>
-      <div class="card mb-3 rounded-0 border-0 border-bottom">
-        <div class="row g-0">
-          <div class="col-xl-2">
-            <img
-              src="../../../assets/images/png/ica_logo_100.png"
-              class="img-fluid rounded-start"
-              alt="Logo ICA"
-            />
-          </div>
-          <div class="col-xl-8">
-            <div class="card-body">
-              <h5 class="card-title">Tecnico en Regimen Aduanero</h5>
-              <p class="card-text">
-                Instituto de Capacitacion Aduanera Buenos Aires
-              </p>
-              <p class="card-text">
-                <small class="text-muted">2017 - 2019</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 rounded-0 border-0 border-bottom">
-        <div class="row g-0">
-          <div class="col-xl-2">
-            <img
-              src="../../../assets/images/png/utn_logo_100.png"
-              class="img-fluid rounded-start"
-              alt="Logo UTN"
-            />
-          </div>
-          <div class="col-xl-8">
-            <div class="card-body">
-              <h5 class="card-title">Perito Experto en Armamento</h5>
-              <p class="card-text">
-                Universidad Tecnologica Nacional Facultad Regional Avellaneda
-              </p>
-              <p class="card-text"><small class="text-muted">2016</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 rounded-0 border-0 border-bottom">
-        <div class="row g-0">
-          <div class="col-xl-2">
-            <img
-              src="../../../assets/images/png/eest4_logo_100.png"
-              class="img-fluid rounded-start"
-              alt="Logo ICA"
-            />
-          </div>
-          <div class="col-xl-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Tecnico en Informatica Personal y Profesional
-              </h5>
-              <p class="card-text">
-                Escuela de Educacion Secundaria Tecnica Numero 4 Berazategui
-              </p>
-              <p class="card-text">
-                <small class="text-muted">1996 - 2001</small>
-              </p>
-            </div>
-          </div>
+      <div class="col-xl-8">
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ education.titulo }}
+          </h5>
+          <p class="card-text">{{ education.institucion }}</p>
+          <p class="card-text">
+            <small class="text-muted"
+              >{{ education.anio_inicio }} - {{ education.anio_fin }}</small
+            >
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</div>
